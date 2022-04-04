@@ -1,0 +1,233 @@
+:root{
+    --background-color: rgb(65, 17, 94);
+    --border-color: #1F1F1F;
+    --border-color-2: white;
+    --stream-item: slateblue;
+    --options: rebeccapurple;
+    --text-shadow: 2px 2px 1px #000;
+    --no-shadow: none;
+}
+
+a{
+    display: flex;
+    flex-grow: 1;
+}
+
+body{
+    width: 450px;
+    font-size: 1rem;
+}
+
+body[data-theme="dark"]{
+    --background-color: #171717;
+    --border-color: #1F1F1F;
+    --border-color-2: #999da2;
+    --stream-item: #202124;
+    --options: #171717;
+    --text-shadow: 2px 2px 1px #000;
+    --no-shadow: none;
+}
+
+body[data-theme="light"]{
+    --background-color: #999da2;
+    --border-color: #1F1F1F;
+    --border-color-2: #171717;
+    --stream-item: rgb(228, 228, 228);
+    --options: #999da2;
+    --text-shadow: none;
+    --no-shadow: none;
+}
+
+ul {
+    list-style-type: none;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+li{
+    display: flex;
+}
+
+h3{
+    font-size: 1em;
+}
+
+h4{
+    font-size: 1em;
+}
+
+.header {
+    text-align: center;
+    background-color: var(--background-color);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: 0% 50%;
+    color: white;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--border-color-2);
+    display: table-header-group;
+    text-shadow: 2px 2px 1px #000;
+}
+
+.header-text {
+    font-size: 1.25rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-container{
+    width: 450px;
+}
+
+.streamItem{
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: var(--border-color-2);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color:var(--stream-item);
+    color:var(--border-color-2);
+    text-shadow: var(--text-shadow);
+}
+
+.streamItem-online{
+    transition: background 0.5s;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: var(--border-color-2);
+    background: rgb(72, 221, 72) !important;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color:var(--border-color);
+    text-shadow: var(--no-shadow);
+}
+
+.streamItem-online:hover{
+    transition: background 0.5s;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: var(--border-color-2);
+    background: rgb(55, 170, 55) !important;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color:var(--border-color);
+    text-shadow: var(--no-shadow);
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+  }
+
+body {
+    height: auto;
+    background-color:none;
+    display: grid;
+    margin: 0px 0px 1px 0px;
+    border: 0;
+    
+
+
+}
+
+.offline{
+    text-align: end;
+    color:darkgray;
+    padding-right: 10px;
+    margin: 5px;
+    
+}
+
+.online{
+    text-align: end;
+    color:#1F1F1F;
+    padding-right: 10px;
+    margin: 5px;
+    text-shadow: var(--no-shadow);
+}
+
+.options{
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--border-color-2);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color:var(--options);
+    color:var(--border-color-2);
+    text-shadow: var(--text-shadow);
+    align-items: center;
+}
+
+.optionLabel{
+    align-self: center;  
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.streamer{
+    padding-left: 5px;
+    flex-grow: 1;
+    margin: 5px;   
+}
+
+.ticker{
+    padding-left: 5px;
+    flex-grow: 1;
+    margin: 5px;
+    transition: all 0.05s linear;
+}
+
+.active{   
+        z-index: 3 !important;
+        color: #fff !important;
+        background-color: #0d6efd !important;
+        border-color: #0d6efd !important;
+}
+
+.page-item.active .page-link {
+    z-index: 3 !important;
+    color: #fff !important;
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+}
+
+.page-link:hover {
+    z-index: 2 !important;
+    color: #0a58ca !important;
+    background-color: #e9ecef !important;
+    border-color: #dee2e6 !important;
+}
+
+.hide {
+    height: 0 !important;
+    margin: 0 !important;
+  }
+
+.noShadow{
+    text-shadow: none !important;
+}
+
+.status{
+    padding-right: 10px;
+    
+}

@@ -1,0 +1,159 @@
+:root{
+    --background-color: rgb(65, 17, 94);
+    --border-color: rgb(95, 26, 134);
+    --gradient-color: #530953;
+    --gradient-color-2: black;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100% !important;
+    background-image: linear-gradient(to bottom, var(--gradient-color),var(--gradient-color-2));
+    background-repeat: no-repeat;
+}
+
+body[data-theme="dark"]{
+    --background-color: rgb(66, 66, 66);
+    --border-color: #999da2;
+    --gradient-color: #202124;
+    --gradient-color-2: black;
+}
+
+body[data-theme="light"]{
+    --background-color: #999da2;
+    --border-color: #171717;
+    --gradient-color: white;
+    --gradient-color-2: #999da2;
+}
+
+
+h1{
+    font-size: 2rem;
+    
+}
+
+a, a:visited{
+    font-weight: 300;
+    color: white !important;
+    text-decoration: none;
+}
+
+a:hover{
+    color: gray !important;
+}
+
+#logo{
+    height: 60px;
+    width: 60px;
+    
+   
+    transform: rotate(90deg);
+}
+
+#mainHead{
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#notifStatus{
+    font-weight: 300;
+    margin: 10px;
+    text-align: center;
+}
+
+.card-img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    
+}
+
+.card-bg{
+    background-color: var(--background-color);
+    border: none;
+}
+
+.streamer{
+    display: flex;
+     height: 100px;
+     flex-direction: row;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     margin-left: 25%;
+     margin-right: 25%;
+     margin-top: 20px;
+     align-items: center;
+     border-collapse: separate;
+     overflow: hidden;
+     border: 5px ridge var(--border-color);
+     border-radius: 10px;
+ }
+ 
+.headLinks{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.optionList{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+.optionItem{
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+    align-items: center;
+    border-collapse: separate;
+    overflow: hidden;
+    background-color: var(--background-color);
+    border: 5px ridge var(--border-color);
+    border-radius: 10px;
+    
+}
+
+.optionHeading{
+    
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding: 10px;
+    
+}
+
+.optionControl{
+    align-self: flex-end;
+    margin-left:auto;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+    font-weight: 300;
+}
+
+.header{
+    display: flex;
+    height: fit-content;
+    color:white;
+    background-color:var(--background-color);
+    align-content: flex-start;
+    border-bottom: 5px ridge var(--border-color);
+}

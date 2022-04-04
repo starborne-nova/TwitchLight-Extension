@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "TwitchLight",
+    "version": "1.0.0",
+    "description": "The starter template for a MV3 Twitch Notifier Extension",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "externally_connectable": {
+        "matches": [
+            "<YOUR SERVER URL>",
+            "https://static-cdn.jtvnw.net/jtv_user_pictures/*"
+        ]
+    },
+    "host_permissions": [
+        "<YOUR SERVER URL>"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "options_ui": {
+        "page": "options.html"
+    },
+    "permissions": [
+        "alarms",
+        "storage",
+        "notifications"
+    ]
+}
